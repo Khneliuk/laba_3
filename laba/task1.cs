@@ -38,5 +38,15 @@ namespace laba_3
     {
         return this.salary * 12;
     }
+
+    public static int Total()
+    {
+        return counter;
+    }
+    
+    public override string ToString()
+    {
+        return $"ID: {this.id} Employee: {this.name} Salary: {this.salary} hrn";
+    }
 }
 
