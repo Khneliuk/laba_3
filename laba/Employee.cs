@@ -4,8 +4,9 @@ namespace laba_3
 {
     public class Employee
     {
-        private readonly int id;
-        private string name;
+        //private readonly int id;
+        private int id;
+        private string name = "";
         private double salary;
 
         private static int counter = 0;
@@ -40,10 +41,10 @@ namespace laba_3
 
         public Employee(string name) : this(name, 0) {}
 
-        public double Salary
-        {
-            get { return this.salary; }
-        }
+        //public double Salary
+        //{
+        //    get { return this.salary; }
+        //}
 
         public void raiseSalary(double percentage)
         {
