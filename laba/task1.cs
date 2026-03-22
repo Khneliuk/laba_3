@@ -10,5 +10,14 @@ namespace laba_3
 
         private static int counter = 0;
     }
+    public Employee(string name, double salary)
+    {
+        counter++;
+        this.id = counter;
+        this.name = name;
+        this.salary = salary;
+    }
+    
+    public Employee(string name) : this(name, 0) {}
 }
 
