@@ -10,6 +10,26 @@ namespace laba_3
 
         private static int counter = 0;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public double Salary
+        {
+            get { return salary; }
+            set { salary = value; }
+        }
+
+        public Employee() {}
+
         public Employee(string name, double salary)
         {
             counter++;
