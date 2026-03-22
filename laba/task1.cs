@@ -10,6 +10,7 @@ namespace laba_3
 
         private static int counter = 0;
     }
+    
     public Employee(string name, double salary)
     {
         counter++;
@@ -19,5 +20,18 @@ namespace laba_3
     }
     
     public Employee(string name) : this(name, 0) {}
+    
+    public double Salary
+    {
+        get { return this.salary; }
+    }
+
+    public void raiseSalary(double percentage)
+    {
+        if (percentage > 0)
+        {
+            this.salary += this.salary * (percentage / 100);
+        }
+    }
 }
 
