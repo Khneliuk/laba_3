@@ -33,5 +33,10 @@ namespace laba_3
             this.salary += this.salary * (percentage / 100);
         }
     }
+
+    public double Income()
+    {
+        return this.salary * 12;
+    }
 }
 
