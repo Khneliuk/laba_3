@@ -29,7 +29,7 @@ namespace laba_3
             set { salary = value; }
         }
 
-        public Employee() {}
+        public Employee() {} //для десеріалізації
 
         public Employee(string name, double salary)
         {
